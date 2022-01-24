@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 import os
-from terminal_colors import colors
 import sys
 import tabulate
 import pandas as pd
@@ -9,7 +8,7 @@ import pandas as pd
 # FUNCTIONS
 ##########################################################################################
 def usage():
-	print("\nUSAGE: python3 utls.py [-h <help>] [-cc <terminal color codes>]\n")
+	print("\nUSAGE: python3 utls.py [-h <help>] [-tc <terminal colors>] [-is <If Statements>]\n")
 
 
 def colors():
@@ -39,12 +38,25 @@ def colors():
 	print("Example: echo \"\\033[1;31mSample Text\\033[0m\"\n")
 
 
+def if_statements():
+	print("\n-eq // Equal")
+	print("-ne // Not equal")
+	print("$# // Number of args")
+	print("$1 // First argument of command")
+	print("-ge // Greater or equal")
+	print("-le // Less or equal")
+	print("$var =~ [^0-9] // Check if value is a number")
+	print("exit 1 // Exit script\n")
+
+
 ##########################################################################################
 # COMMANDS
 ##########################################################################################
 if len(sys.argv) == 2 and sys.argv[1] == "-h" or len(sys.argv) == 1:
 	usage()
-elif len(sys.argv) == 2 and sys.argv[1] == "-cc":
+elif len(sys.argv) == 2 and sys.argv[1] == "-tc":
 	colors()
+elif len(sys.argv) == 2 and sys.argv[1] == "-is":
+    	if_statements()
 else:
 	usage()
