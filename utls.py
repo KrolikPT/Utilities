@@ -58,6 +58,6 @@ if len(sys.argv) == 2 and sys.argv[1] == "-h" or len(sys.argv) == 1:
 elif len(sys.argv) == 2 and sys.argv[1] == "-tc":
 	colors()
 elif len(sys.argv) == 2 and sys.argv[1] == "-is":
-    	if_statements()
+    if_statements()
 else:
 	usage()
