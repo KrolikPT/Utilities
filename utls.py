@@ -45,8 +45,9 @@ def if_statements():
 	print("$1 // First argument of command")
 	print("-ge // Greater or equal")
 	print("-le // Less or equal")
-	print("$var =~ [^0-9] // Check if value is a number")
-	print("exit 1 // Exit script\n")
+	print("-gt // Greater than")
+	print("-lt // Less than")
+	print("$var =~ [^0-9] // Check if value is a number\n")
 
 
 ##########################################################################################
