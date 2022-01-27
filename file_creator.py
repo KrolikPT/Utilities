@@ -1,9 +1,10 @@
 import os
 
 FILENAME = ""
+EXTENSION = ""
 
 def permission():
-    os.system(f"chmod +x {FILENAME}")
+    os.system(f"chmod +x {FILENAME}.{EXTENSION}")
 
 
 def filename():
@@ -25,22 +26,30 @@ def file_creator():
 
     if option == "1":
         
-        with open(FILENAME + ".sh", "w") as f:
+        EXTENSION = ".sh"
+
+        with open(FILENAME + EXTENSION, "w") as f:
             f.write("#!/bin/bash\n")
 
     elif option == "2":
+
+        EXTENSION = ".py"
         
-        with open(FILENAME + ".py", "w") as f:
+        with open(FILENAME + EXTENSION, "w") as f:
             f.write("#!/usr/bin/env python\n")
 
     elif option == "3":
 
-        with open(FILENAME + ".py", "w") as f:
+        EXTENSION = ".py"
+
+        with open(FILENAME + EXTENSION, "w") as f:
             f.write("#!/usr/bin/env python3\n")
 
     elif option == "4":
+
+        EXTENSION = ".txt"
         
-        with open(FILENAME + ".txt", "w") as f:
+        with open(FILENAME + EXTENSION, "w") as f:
             f.write("")
 
     elif option == "0":
