@@ -28,28 +28,28 @@ def file_creator():
         
         EXTENSION = ".sh"
 
-        with open(FILENAME + EXTENSION, "w") as f:
+        with open(str(FILENAME + EXTENSION), "w") as f:
             f.write("#!/bin/bash\n")
 
     elif option == "2":
 
         EXTENSION = ".py"
         
-        with open(FILENAME + EXTENSION, "w") as f:
+        with open(str(FILENAME + EXTENSION), "w") as f:
             f.write("#!/usr/bin/env python\n")
 
     elif option == "3":
 
         EXTENSION = ".py"
 
-        with open(FILENAME + EXTENSION, "w") as f:
+        with open(str(FILENAME + EXTENSION), "w") as f:
             f.write("#!/usr/bin/env python3\n")
 
     elif option == "4":
 
         EXTENSION = ".txt"
         
-        with open(FILENAME + EXTENSION, "w") as f:
+        with open(str(FILENAME + EXTENSION), "w") as f:
             f.write("")
 
     elif option == "0":
