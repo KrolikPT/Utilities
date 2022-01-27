@@ -4,7 +4,7 @@ FILENAME = ""
 EXTENSION = ""
 
 def permission():
-    os.system("chmod +x %s.%s" % (FILENAME, EXTENSION))
+    os.system("sudo chmod +x %s.%s" % (FILENAME, EXTENSION))
 
 
 def file_creator():
