@@ -1,6 +1,14 @@
+import os
+
+FILENAME = ""
+
+def permission():
+    os.system("chmod +x %s" % FILENAME)
+
+
 def filename():
-    name = input("# Filename (without extension): ")
-    return name
+    FILENAME = input("# Filename (without extension): ")
+
 
 def file_creator():
     print("\n#####################################################")
@@ -17,22 +25,22 @@ def file_creator():
 
     if option == "1":
         
-        with open(filename() + ".sh", "w") as f:
+        with open(FILENAME + ".sh", "w") as f:
             f.write("#!/bin/bash\n")
 
     elif option == "2":
         
-        with open(filename() + ".py", "w") as f:
+        with open(FILENAME + ".py", "w") as f:
             f.write("#!/usr/bin/env python\n")
 
     elif option == "3":
 
-        with open(filename() + ".py", "w") as f:
+        with open(FILENAME + ".py", "w") as f:
             f.write("#!/usr/bin/env python3\n")
 
     elif option == "4":
         
-        with open(filename() + ".txt", "w") as f:
+        with open(FILENAME + ".txt", "w") as f:
             f.write("")
 
     elif option == "0":
@@ -40,3 +48,5 @@ def file_creator():
 
     else:
         print("Invalid Option")
+
+    permission()
