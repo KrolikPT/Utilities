@@ -12,7 +12,7 @@ from file_creator import file_creator
 # FUNCTIONS
 ##########################################################################################
 def usage():
-	print("\nUSAGE: python3 utls.py [-h <help>] [-tc <terminal colors>] [-cf <Create File>]\n")
+	print("\nUSAGE: python3 utls.py [-h <help>] [-i <install>] [-u <uninstall>] [-tc <terminal colors>] [-cf <Create File>]\n")
 
 
 ##########################################################################################
@@ -20,6 +20,14 @@ def usage():
 ##########################################################################################
 if len(sys.argv) == 2 and sys.argv[1] == "-h" or len(sys.argv) == 1:
 	usage()
+elif len(sys.argv) == 2 and sys.argv[1] == "-i":
+    os.system("sudo cp utls.py /bin/utls")
+	os.system("sudo cp colors.py /bin/colors.py")
+	os.system("sudo cp file_creator.py /bin/file_creator.py")
+elif len(sys.argv) == 2 and sys.argv[1] == "-u":
+    os.system("sudo rm /bin/utls")
+	os.system("sudo rm /bin/colors.py")
+	os.system("sudo rm /bin/file_creator.py")
 elif len(sys.argv) == 2 and sys.argv[1] == "-tc":
 	colors()
 elif len(sys.argv) == 2 and sys.argv[1] == "-cf":
