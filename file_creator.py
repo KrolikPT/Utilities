@@ -52,4 +52,4 @@ def file_creator():
     else:
         print("Invalid Option")
 
-    os.system(f"sudo chmod +x {FILENAME}.{EXTENSION}")
+    os.system(f"sudo chmod +x {FILENAME}{EXTENSION}")
