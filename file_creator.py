@@ -3,10 +3,6 @@ import os
 FILENAME = ""
 EXTENSION = ""
 
-def permission():
-    os.system("sudo chmod +x %s.%s" % (FILENAME, EXTENSION))
-
-
 def file_creator():
     print("\n#####################################################")
     print("#################### CREATE FILE ####################")
@@ -56,4 +52,4 @@ def file_creator():
     else:
         print("Invalid Option")
 
-    permission()
+    os.system(f"sudo chmod +x {FILENAME}.{EXTENSION}")
