@@ -2,6 +2,7 @@ import os
 
 def install():
     os.system("sudo cp utls.py /bin/utls")
+    os.system("sudo cp installation.py /bin/installation.py")
     os.system("sudo cp colors.py /bin/colors.py")
     os.system("sudo cp file_creator.py /bin/file_creator.py")
     os.system("sudo chmod +x /bin/utls")
@@ -11,6 +12,7 @@ def install():
 
 def uninstall():
     os.system("sudo rm /bin/utls")
+    os.system("sudo rm /bin/installation.py")
     os.system("sudo rm /bin/colors.py")
     os.system("sudo rm /bin/file_creator.py")
     print("The script was removed!")
