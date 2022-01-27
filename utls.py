@@ -22,9 +22,9 @@ def usage():
 if len(sys.argv) == 2 and sys.argv[1] == "-h" or len(sys.argv) == 1:
 	usage()
 elif len(sys.argv) == 2 and sys.argv[1] == "-i":
-	install()	
+	installation.install()
 elif len(sys.argv) == 2 and sys.argv[1] == "-u":
-	uninstall()
+	installation.uninstall()
 elif len(sys.argv) == 2 and sys.argv[1] == "-tc":
 	colors()
 elif len(sys.argv) == 2 and sys.argv[1] == "-cf":
