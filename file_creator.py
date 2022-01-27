@@ -3,7 +3,7 @@ import os
 FILENAME = ""
 
 def permission():
-    os.system("chmod +x %s" % FILENAME)
+    os.system(f"chmod +x {FILENAME}")
 
 
 def filename():
