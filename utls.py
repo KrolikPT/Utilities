@@ -7,7 +7,8 @@ import sys
 ##########################################################################################
 from colors import colors
 from file_creator import file_creator
-from installation import install, uninstall 
+from installation import install
+from installation import uninstall 
 
 ##########################################################################################
 # FUNCTIONS
