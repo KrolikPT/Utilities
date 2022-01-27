@@ -13,7 +13,7 @@ import installation
 # FUNCTIONS
 ##########################################################################################
 def usage():
-	print("\nUsage: python3 utls.py [-h <help>] [-i <install/update>] [-u <uninstall>] [-tc <terminal colors>] [-cf <Create File>]\n")
+	print("\nUsage: python3 utls.py [-h <help>] [-i <install/update>] [-u <uninstall>] [-tc <terminal colors>] [-cf <create file>]\n")
 
 
 ##########################################################################################
