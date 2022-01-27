@@ -4,7 +4,7 @@ FILENAME = ""
 EXTENSION = ""
 
 def permission():
-    os.system(f"chmod +x {FILENAME}.{EXTENSION}")
+    os.system("chmod +x %s.%s" % FILENAME, EXTENSION)
 
 
 def filename():
