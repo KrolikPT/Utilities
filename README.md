@@ -5,6 +5,7 @@ Usage: python3 utls.py [-h \<help\>] [-i \<install/update\>] [-u \<uninstall\>] 
 
 # Requirements
 pip install tabulate
+
 pip install pandas
 
 # Install script
