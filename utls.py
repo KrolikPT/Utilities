@@ -5,9 +5,9 @@ import sys
 ##########################################################################################
 # MODULES
 ##########################################################################################
-from colors import colors
-from file_creator import file_creator
-import installation
+from modules.colors import colors
+from modules.file_creator import file_creator
+from modules.installation import install, uninstall
 
 ##########################################################################################
 # FUNCTIONS
@@ -22,9 +22,9 @@ def usage():
 if len(sys.argv) == 2 and sys.argv[1] == "-h" or len(sys.argv) == 1:
 	usage()
 elif len(sys.argv) == 2 and sys.argv[1] == "-i":
-	installation.install()
+	install()
 elif len(sys.argv) == 2 and sys.argv[1] == "-u":
-	installation.uninstall()
+	uninstall()
 elif len(sys.argv) == 2 and sys.argv[1] == "-tc":
 	colors()
 elif len(sys.argv) == 2 and sys.argv[1] == "-cf":
