@@ -11,5 +11,5 @@ def install():
 
 def uninstall():
     os.system("sudo rm /bin/utls")
-    os.system("sudo rm -rf /bin/modules/*")
+    os.system("sudo rm -rf /bin/modules")
     print("The script was removed!")
