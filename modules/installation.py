@@ -2,7 +2,7 @@ import os
 
 def install():
     os.system("sudo cp utls.py /bin/utls")
-    os.system("sudo cp modules/* /bin/installation.py")
+    os.system("sudo cp modules/* /bin/modules/")
     os.system("sudo chmod +x /bin/utls")
     print("Script installed!")
     print("Now you can use only: utls [OPTION]")

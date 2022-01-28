@@ -3,6 +3,10 @@ Python scripts to help you in terminal of Linux.
 
 Usage: python3 utls.py [-h \<help\>] [-i \<install/update\>] [-u \<uninstall\>] [-tc \<terminal colors\>] [-cf \<create file\>]
 
+# Requirements
+pip install tabulate
+pip install pandas
+
 # Install script
 If you want use the script without write "python3 utls.py [OPTIONS]" you need install using: 
 
