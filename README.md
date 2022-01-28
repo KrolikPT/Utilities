@@ -1,7 +1,7 @@
 # Requirements
-pip install tabulate
+Install all python modules to use the script
 
-pip install pandas
+pip install -r requirements.txt
 
 # Utilities
 Python scripts to help you in terminal of Linux.
